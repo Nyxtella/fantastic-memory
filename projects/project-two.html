@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studying the Hubbard Model and its Realization in Ultracold Atoms — Konnark Dey</title>
+  <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <svg class="svg-filters" aria-hidden="true">
+    <filter id="glass-refraction">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.04" numOctaves="2" seed="7" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../index.html" class="brand-mark">
+        <span>Konnark Dey</span>
+      </a>
+
+      <div class="header-controls">
+        <nav class="site-nav" id="primary-nav" aria-label="Primary">
+          <a href="../index.html">Home</a>
+          <a href="project-one.html" aria-current="page">Projects</a>
+          <a href="../about.html">About</a>
+          <a href="../gallery.html">Gallery</a>
+        <a href="../links.html">Links</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+        </button>
+
+        <button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="false" aria-label="Turn background music on">
+          <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9.5 5 5M21 9.5l-5 5"/></svg>
+          <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+        </button>
+
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-canvas">
+    <section class="content-band case-hero" data-atmosphere>
+      <div class="section-atmosphere section-atmosphere--crimson-violet" aria-hidden="true"></div>
+      <div class="content-band__inner">
+        <div class="case-hero__meta">
+          <span>Project 02</span>
+          <span>Mar – Apr 2026</span>
+          <span>Term Project · NISER</span>
+          <span>Advisor: Anamitra Mukherjee</span>
+          <span>Collaborator: M. Hrishikesh</span>
+        </div>
+        <h1 class="case-hero__title">Studying the Hubbard Model and its Realization in Ultracold Atoms</h1>
+        <p class="case-hero__lead">
+          A term project on the Hubbard model: how it behaves in a trapping potential, and how its structures could be seen in ultracold-atom experiments.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-band" data-atmosphere>
+      <div class="section-atmosphere section-atmosphere--ember-burgundy" aria-hidden="true"></div>
+      <div class="content-band__inner">
+        <div class="timeline-wrapper" id="project-timeline">
+          <div class="timeline-rail" aria-hidden="true">
+            <div class="timeline-rail__fill" id="timeline-progress"></div>
+          </div>
+
+          <article class="timeline-stage" data-stage>
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-card__step">Stage 01 · Context</p>
+              <h2>The Hubbard model for cold atoms</h2>
+              <p>
+                Term project at NISER (March–April 2026), advised by Anamitra Mukherjee, on the Hubbard model and its realization with ultracold atoms.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-stage" data-stage>
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-card__step">Stage 02 · Method</p>
+              <h2>Mean-field analysis</h2>
+              <p>
+                The Hubbard model was studied both analytically and numerically, using the mean-field approximation for a quadratic trapping potential.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-stage" data-stage>
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-card__step">Stage 03 · Simulation</p>
+              <h2>Wedding cake and insulator shells</h2>
+              <p>
+                The system was simulated to arrive at the wedding-cake and insulator shell structures, together with the localized wavefunctions of the same.
+              </p>
+              <div class="stage-media">
+                <figure><img src="../assets/images/dp_set.png" alt="ODT setup render"><figcaption>The ODT & Imaging setup.</figcaption></figure>
+                <figure><img src="../assets/images/Dipole_phys.jpeg" alt="ODT setup"><figcaption>A render of the setup.</figcaption></figure>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-stage" data-stage>
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-card__step">Stage 04 · Observables</p>
+              <h2>Experimental signatures</h2>
+              <p>
+                The corresponding experimental signatures were worked out for:
+              </p>
+              <ul class="tl-list">
+                <li>Time of flight (TOF)</li>
+                <li>Matter wave interferometry</li>
+                <li>Bragg spectroscopy</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <nav class="case-nav-footer" aria-label="Project pagination">
+          <a href="project-one.html" class="btn">&larr; Prev: 01 Microtrap Arrays</a>
+          <a href="project-three.html" class="btn btn--accent">Next: 03 Bound States &rarr;</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Konnark Dey</span>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../gallery.html">Gallery</a>
+        <a href="../links.html">Links</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../music.html" data-open-soundtrack>Soundtrack</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=therealk.dey@gmail.com&su=Hello%20Konnark" target="_blank" rel="noopener noreferrer">Gmail · therealk.dey@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/timeline.js"></script>
+  <script src="../js/music-player.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
