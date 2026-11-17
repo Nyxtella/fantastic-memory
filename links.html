@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links — Konnark Dey</title>
+  <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <svg class="svg-filters" aria-hidden="true">
+    <filter id="glass-refraction">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.04" numOctaves="2" seed="7" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-mark">
+        <span>Konnark Dey</span>
+      </a>
+
+      <div class="header-controls">
+        <nav class="site-nav" id="primary-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="projects/project-one.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="links.html" aria-current="page">Links</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+        </button>
+
+        <button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="false" aria-label="Turn background music on">
+          <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9.5 5 5M21 9.5l-5 5"/></svg>
+          <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+        </button>
+
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-canvas">
+    <section class="content-band hero-band" data-atmosphere>
+      <div class="section-atmosphere section-atmosphere--ember-burgundy" aria-hidden="true"></div>
+      <div class="content-band__inner">
+        <p class="hero-eyebrow reveal">Miscellaneous · Funny Stuff</p>
+        <h1 class="hero-title reveal">My Links and <em>things I want others to see</em>.</h1>
+      </div>
+    </section>
+
+    <section class="content-band" data-atmosphere>
+      <div class="section-atmosphere section-atmosphere--crimson-violet" aria-hidden="true"></div>
+      <div class="content-band__inner">
+        <div class="link-group">
+          <div class="section-header reveal"><h2>Useful Links</h2><span>Profiles</span></div>
+          <div class="link-list">
+            <a class="link-row reveal" href="https://www.linkedin.com/in/konnark-pathak-dey" target="_blank" rel="noopener noreferrer"><span class="link-row__host">linkedin.com</span><span class="link-row__title">LinkedIn</span><span class="link-row__desc">My LinkedIn [mostly empty]</span><span class="link-row__arrow" aria-hidden="true">&nearr;</span></a>
+            <a class="link-row reveal" href="https://mail.google.com/mail/?view=cm&fs=1&to=therealk.dey@gmail.com&su=Hello%20Konnark" target="_blank" rel="noopener noreferrer"><span class="link-row__host">gmail.com</span><span class="link-row__title">Email via Gmail</span><span class="link-row__desc">My Gmail :D</span><span class="link-row__arrow" aria-hidden="true">&nearr;</span></a>
+          </div>
+        </div>
+
+        <div class="link-group">
+          <div class="section-header reveal"><h2>Random Things</h2><span>Misc · Recommendations</span></div>
+          <div class="link-list">
+            <a class="link-row reveal" href="https://www.youtube.com/Yuk46XbvwUY" target="_blank" rel="noopener noreferrer"><span class="link-row__host">youtube.com</span><span class="link-row__title">Night of Nights</span><span class="link-row__desc">For those unaware of peak.</span><span class="link-row__arrow" aria-hidden="true">&nearr;</span></a>
+            <a class="link-row reveal" href="https://youtu.be/uDMUxDUpFNY" target="_blank" rel="noopener noreferrer"><span class="link-row__host">youtube.com</span><span class="link-row__title">Polyrhythmic Synth Jazz</span><span class="link-row__desc">In the words of Gene, "No one can dance to that."</span><span class="link-row__arrow" aria-hidden="true">&nearr;</span></a>
+            <a class="link-row reveal" href="https://www.youtube.com/dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"><span class="link-row__host">youtube.com</span><span class="link-row__title">Possibly the greatest meme.</span><span class="link-row__desc">You should just open the link.</span><span class="link-row__arrow" aria-hidden="true">&nearr;</span></a>
+            <a class="link-row reveal" href="https://www.youtube.com/BZKvtZqRihw" target="_blank" rel="noopener noreferrer"><span class="link-row__host">youtube.com</span><span class="link-row__title">White Palace</span><span class="link-row__desc">One of the best video game soudtracks.</span><span class="link-row__arrow" aria-hidden="true">&nearr;</span></a>
+          </div>
+        </div>
+
+        <div class="link-group">
+          <div class="section-header reveal"><h2>Site Links</h2><span>Internal</span></div>
+          <div class="link-list">
+            <a class="link-row reveal" href="index.html#work"><span class="link-row__host">home</span><span class="link-row__title">It's.....the home page</span><span class="link-row__desc">A short description + 3 msot recent projects.</span><span class="link-row__arrow" aria-hidden="true">&rarr;</span></a>
+            <a class="link-row reveal" href="about.html"><span class="link-row__host">about</span><span class="link-row__title">About</span><span class="link-row__desc">Education, skills, honors and hobbies.</span><span class="link-row__arrow" aria-hidden="true">&rarr;</span></a>
+            <a class="link-row reveal" href="gallery.html"><span class="link-row__host">gallery</span><span class="link-row__title">Gallery</span><span class="link-row__desc">Event gallery.</span><span class="link-row__arrow" aria-hidden="true">&rarr;</span></a>
+            <a class="link-row reveal" href="contact.html"><span class="link-row__host">contact</span><span class="link-row__title">Contact</span><span class="link-row__desc">Ways of contacting me.</span><span class="link-row__arrow" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Konnark Dey</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="links.html">Links</a>
+        <a href="contact.html">Contact</a>
+        <a href="music.html" data-open-soundtrack>Soundtrack</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=therealk.dey@gmail.com&su=Hello%20Konnark" target="_blank" rel="noopener noreferrer">Gmail · therealk.dey@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/timeline.js"></script>
+  <script src="js/music-player.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

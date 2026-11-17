@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Konnark Dey</title>
+  <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <svg class="svg-filters" aria-hidden="true">
+    <filter id="glass-refraction">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.04" numOctaves="2" seed="7" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-mark">
+        <span>Konnark Dey</span>
+      </a>
+
+      <div class="header-controls">
+        <nav class="site-nav" id="primary-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="projects/project-one.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+        <a href="links.html">Links</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+        </button>
+
+        <button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="false" aria-label="Turn background music on">
+          <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9.5 5 5M21 9.5l-5 5"/></svg>
+          <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+        </button>
+
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-canvas">
+    <section class="content-band hero-band" data-atmosphere>
+      <div class="section-atmosphere section-atmosphere--crimson-violet" aria-hidden="true"></div>
+      <div class="content-band__inner">
+        <p class="hero-eyebrow reveal">Get in touch</p>
+        <h1 class="hero-title reveal">Another header with <em>emphasis</em> :D</h1>
+        <div class="hero-meta-row reveal">
+          <p class="hero-bio">Happy to talk about physics, my projects, or about any of my interests. Feel free to reach out!</p>
+          <div class="hero-socials">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=therealk.dey@gmail.com&su=Hello%20Konnark" class="btn btn--accent" target="_blank" rel="noopener noreferrer">Compose in Gmail</a>
+            <a href="index.html" class="btn">To Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-band" data-atmosphere>
+      <div class="section-atmosphere section-atmosphere--ember-burgundy" aria-hidden="true"></div>
+      <div class="content-band__inner">
+        <div class="contact-grid">
+          <article class="contact-panel reveal">
+            <p class="contact-panel__eyebrow">01 · Direct Channels</p>
+            <h2 class="contact-panel__title">Reach out</h2>
+            <p class="contact-panel__copy">If you know me in person, just give me a call.</p>
+
+            <div class="contact-channel-list">
+              <div class="contact-channel">
+                <span class="contact-channel__label">Email</span>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=therealk.dey@gmail.com&su=Hello%20Konnark" class="contact-channel__value" target="_blank" rel="noopener noreferrer">therealk.dey@gmail.com</a>
+                <span class="contact-channel__meta">Redirects to a pre-composed email template</span>
+              </div>
+              <div class="contact-channel">
+                <span class="contact-channel__label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/konnark-pathak-dey" class="contact-channel__value" target="_blank" rel="noopener noreferrer">Konnark Dey</a>
+                <span class="contact-channel__meta">Professional profile</span>
+              </div>
+              <div class="contact-channel">
+                <span class="contact-channel__label">Institute</span>
+                <span class="contact-channel__value">None [For Now]</span>
+                <span class="contact-channel__meta">To Be Updated [Hopefully Soon O, O]</span>
+              </div>
+            </div>
+
+            <div class="contact-actions">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=therealk.dey@gmail.com&su=Hello%20Konnark" class="btn btn--accent" target="_blank" rel="noopener noreferrer">Open Gmail &rarr;</a>
+              <button type="button" class="btn" id="copy-studio-email">Copy Email Address</button>
+            </div>
+          </article>
+
+          <article class="contact-panel reveal">
+            <p class="contact-panel__eyebrow">02 · Message Builder</p>
+            <h2 class="contact-panel__title">For a quick Gmail draft</h2>
+            <p class="contact-panel__copy">Easy access for contact, yes? Seemed to be a very convenient feature, so here it is.</p>
+
+            <form class="contact-form" id="gmail-contact-form">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="sender-name">Your Name</label>
+                  <input type="text" id="sender-name" name="name" autocomplete="name" required>
+                </div>
+                <div class="form-field">
+                  <label for="sender-email">Reply Email</label>
+                  <input type="email" id="sender-email" name="email" autocomplete="email" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="inquiry-scope">Topic</label>
+                  <select id="inquiry-scope" name="scope">
+                    <option value="Research collaboration">Research</option>
+                    <option value="Question about a project">Question about a project</option>
+                    <option value="Academic opportunity">My Hobbies :D</option>
+                    <option value="Something else">Project / Thesis Report?</option>
+                    <option value="Something else">Something else (?)</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="inquiry-timeline">Timeframe</label>
+                  <select id="inquiry-timeline" name="timeline">
+                    <option value="Flexible">NOW >:( </option>
+                    <option value="Flexible">Flexible</option>
+                    <option value="Within a month">Within a month</option>
+                    <option value="Within three months">Within three months</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="inquiry-brief">Message</label>
+                <textarea id="inquiry-brief" name="brief" placeholder="A few lines on what you would like to discuss..." required></textarea>
+              </div>
+
+              <div class="contact-actions">
+                <button type="submit" class="btn btn--accent">Send via Gmail &rarr;</button>
+                <a href="https://www.linkedin.com/in/konnark-pathak-dey" class="btn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </div>
+
+              <p class="contact-feedback" id="contact-feedback" role="status" aria-live="polite"></p>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Konnark Dey</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="links.html">Links</a>
+        <a href="contact.html">Contact</a>
+        <a href="music.html" data-open-soundtrack>Soundtrack</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=therealk.dey@gmail.com&su=Hello%20Konnark" target="_blank" rel="noopener noreferrer">Gmail · therealk.dey@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/timeline.js"></script>
+  <script src="js/music-player.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

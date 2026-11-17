@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Konnark Dey</title>
+  <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <svg class="svg-filters" aria-hidden="true">
+    <filter id="glass-refraction">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.04" numOctaves="2" seed="7" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </svg>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-mark">
+        <span>Konnark Dey</span>
+      </a>
+
+      <div class="header-controls">
+        <nav class="site-nav" id="primary-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="projects/project-one.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="links.html">Links</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+        </button>
+
+        <button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="false" aria-label="Turn background music on">
+          <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9.5 5 5M21 9.5l-5 5"/></svg>
+          <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+        </button>
+
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-canvas">
+    <section class="content-band hero-band" data-atmosphere>
+      <div class="section-atmosphere section-atmosphere--ember-burgundy" aria-hidden="true"></div>
+      <div class="content-band__inner">
+        <p class="hero-eyebrow reveal">Gallery · Images</p>
+        <h1 class="hero-title reveal">A look into my <em>life</em>.</h1>
+        <div class="hero-meta-row reveal">
+          <p class="hero-bio">Hover over images for caption, click to view larger.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-band" data-atmosphere>
+      <div class="section-atmosphere section-atmosphere--crimson-violet" aria-hidden="true"></div>
+      <div class="content-band__inner">
+        <div class="section-header reveal"><h2>Images</h2><span>09 Items</span></div>
+        <div class="gallery-grid">
+
+          <figure class="gallery-item reveal" data-detail="Drumming for our farewell performance.">
+            <button type="button" class="gallery-item__btn" data-full="assets/gallery/Farewell-2.jpg" aria-label="Farewell 2026.">
+              <img src="assets/gallery/Farewell-2.jpg" width="1200" height="800" alt="Drumming for our farewell performance." loading="lazy" decoding="async">
+            </button>
+            <figcaption class="gallery-item__caption">Farewell 2026.</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-detail="Playing guitar for SPS day.">
+            <button type="button" class="gallery-item__btn" data-full="assets/gallery/BKV_0506.JPG" aria-label="SPS Day.">
+              <img src="assets/gallery/BKV_0506.JPG" width="800" height="1000" alt="SPS Day Guiy=tar performance." loading="lazy" decoding="async">
+            </button>
+            <figcaption class="gallery-item__caption">SPS Day.</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-detail="Star Trail. Taken near North Friesland Dikes, Netherlands.">
+            <button type="button" class="gallery-item__btn" data-full="assets/gallery/sky_longexp.jpeg" aria-label="Star Trail.">
+              <img src="assets/gallery/sky_longexp.jpeg" width="1000" height="800" alt="Star trails." loading="lazy" decoding="async">
+            </button>
+            <figcaption class="gallery-item__caption">Star Trail.</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-detail="Cologne Cathedral.">
+            <button type="button" class="gallery-item__btn" data-full="assets/gallery/cologne.jpg" aria-label="Cologne Cathedral.">
+              <img src="assets/gallery/cologne.jpg" width="1000" height="1000" alt="Cologne Cathedral." loading="lazy" decoding="async">
+            </button>
+            <figcaption class="gallery-item__caption">Cologne Cathedral.</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-detail="Setting up the He-Ne lasing before characterization.">
+            <button type="button" class="gallery-item__btn" data-full="assets/gallery/hene_lase.jpg" aria-label="He-Ne lasing.">
+              <img src="assets/gallery/hene_lase.jpg" width="800" height="1000" alt="He-Ne lasing." loading="lazy" decoding="async">
+            </button>
+            <figcaption class="gallery-item__caption">He-Ne lasing.</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-detail="I'm particularly fond of clouds.">
+            <button type="button" class="gallery-item__btn" data-full="assets/gallery/cloud_plane.jpg" aria-label="Clouds through an airplane.">
+              <img src="assets/gallery/cloud_plane.jpg" width="1200" height="800" alt="Cloud in airplane." loading="lazy" decoding="async">
+            </button>
+            <figcaption class="gallery-item__caption">Clouds through an airplane.</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-detail="On a particularly foggy night at NISER....">
+            <button type="button" class="gallery-item__btn" data-full="assets/gallery/med_centre.jpg" aria-label="NISER.">
+              <img src="assets/gallery/med_centre.jpg" width="800" height="800" alt="Meditation centre." loading="lazy" decoding="async">
+            </button>
+            <figcaption class="gallery-item__caption">NISER.</figcaption>
+          </figure>
+
+          <figure class="gallery-item reveal" data-detail="On a hillside in Vishakhapatnam.">
+            <button type="button" class="gallery-item__btn" data-full="assets/gallery/visakh.jpg" aria-label="In Vishakhapatnam.">
+              <img src="assets/gallery/visakh.jpg" width="1200" height="700" alt="Visakh." loading="lazy" decoding="async">
+            </button>
+            <figcaption class="gallery-item__caption">In Vishakhapatnam.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 Konnark Dey</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="links.html">Links</a>
+        <a href="contact.html">Contact</a>
+        <a href="music.html" data-open-soundtrack>Soundtrack</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=therealk.dey@gmail.com&su=Hello%20Konnark" target="_blank" rel="noopener noreferrer">Gmail · therealk.dey@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/timeline.js"></script>
+  <script src="js/music-player.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
