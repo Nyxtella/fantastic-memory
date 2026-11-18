@@ -1668,6 +1668,15 @@ a.contact-channel__value:hover {
   opacity: calc(var(--pulse) * 1.1);
 }
 
+html[data-theme="light"] .sound-toggle::after {
+  background: linear-gradient(120deg, #c42424 0%, #d9531a 50%, #8a1c1c 100%);
+  filter: blur(6px);
+}
+
+html[data-theme="light"] .sound-toggle[aria-pressed="true"]::after {
+  opacity: min(1, calc(0.3 + var(--pulse) * 1.2));
+}
+
 .drawer-tab-btn::before { opacity: 0; }
 .drawer-tab-btn:hover::before { opacity: 0.4; }
 .drawer-tab-btn[aria-selected="true"]::before { opacity: 1; background: var(--metal-hot); }
