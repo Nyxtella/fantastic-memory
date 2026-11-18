@@ -1095,7 +1095,7 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: block; }
 
 .project-card:hover .project-card__media img {
   --img-scale: 1.07;
-  opacity: 0.95;
+  opacity: 0.8;
   filter: saturate(1.06) contrast(1.08);
 }
 
