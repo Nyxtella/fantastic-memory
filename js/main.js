@@ -36,11 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const name = (document.getElementById('sender-name')?.value || '').trim();
         const replyEmail = (document.getElementById('sender-email')?.value || '').trim();
-        const scope = (document.getElementById('inquiry-scope')?.value || 'Message').trim();
-        const timeline = (document.getElementById('inquiry-timeline')?.value || 'Flexible').trim();
+        // Use the text the visitor sees in each dropdown, not its hidden value
+        const selectedText = (id, fallback) => {
+          const sel = document.getElementById(id);
+          return (sel && sel.selectedOptions[0] ? sel.selectedOptions[0].text : fallback).trim();
+        };
+        const scope = selectedText('inquiry-scope', 'Message');
+        const timeline = selectedText('inquiry-timeline', 'Flexible');
         const brief = (document.getElementById('inquiry-brief')?.value || '').trim();
 
-        const subject = `[${scope}] ${name || 'New message'}`;
+        const subject = `[${scope}] Hello Konnark`;
         const bodyLines = [
           `Name: ${name || '—'}`,
           `Reply Address: ${replyEmail || '—'}`,
