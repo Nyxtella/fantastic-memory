@@ -1079,6 +1079,7 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: block; }
   object-fit: cover;
   will-change: transform;
   transform: translate3d(var(--img-x), var(--img-y), 0) scale(var(--img-scale));
+  opacity: 0.6;
   transition:
     transform 0.75s var(--ease-editorial),
     filter 0.65s ease;
@@ -1089,10 +1090,12 @@ html[data-theme="light"] .theme-toggle .icon-moon { display: block; }
   transition:
     transform 0.16s cubic-bezier(0.2, 0.8, 0.2, 1),
     filter 0.45s ease;
+    opacity 0.45s ease;
 }
 
 .project-card:hover .project-card__media img {
   --img-scale: 1.07;
+  opacity: 0.95;
   filter: saturate(1.06) contrast(1.08);
 }
 
